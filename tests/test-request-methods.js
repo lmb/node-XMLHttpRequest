@@ -36,7 +36,7 @@ function start(method) {
   // Reset each time
   xhr = new XMLHttpRequest();
 
-  var withCreds = xhr.withCredentials(false);
+  var withCreds = xhr.withCredentials;
   assert.equal(false, withCreds);
 
   xhr.onreadystatechange = function() {
